@@ -1,0 +1,48 @@
+.card {
+  background: white;
+  margin: 1em;
+  width: 30%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 150;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+}
+.card-image {
+  align-items: center;
+  margin: 2em;
+  width: inherit;
+  height: 50%;
+  border: 5px solid goldenrod;
+  border-radius: 40px;
+}
+.card-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  color: rgb(252, 181, 0);
+}
+.diet-li {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.card-detail {
+  text-decoration: none;
+  font-size: 30px;
+}
+.card-inside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

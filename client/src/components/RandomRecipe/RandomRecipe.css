@@ -1,0 +1,30 @@
+.random-back {
+  background-color: #aec6cf;
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.random-image {
+  height: auto;
+  width: auto;
+  border-radius: 15%;
+  border: none;
+  float: right;
+}
+.random-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: coral;
+}
+.random-text {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+.random-names {
+  font-size: 25px;
+  color: coral;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}

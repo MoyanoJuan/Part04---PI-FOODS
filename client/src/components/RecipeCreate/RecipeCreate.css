@@ -1,0 +1,53 @@
+.create-back {
+  background-color: peachpuff;
+  background-size: cover;
+}
+.cont-create {
+  background: white;
+  width: 700px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border: none;
+  border-radius: 10px;
+}
+.create-title {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+}
+.create-text {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  margin: 0;
+}
+.create-input {
+  width: 95%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.create-button {
+  background-color: #bfc8d7;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 16px 0px;
+  font-size: 15px;
+}
+.create-dropdown {
+  display: flex;
+  justify-content: center;
+}
+.create-select {
+  width: 60%;
+  padding: 10px;
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
