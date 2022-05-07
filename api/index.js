@@ -17,12 +17,29 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
+const server = require("./src/app.js");
+const { conn, Diet } = require("./src/db.js");
+const model = require("../api/src/ApiInfo/AllData");
+
+const dietLoader = async function () {
+  const dietsApi = await model.allDiets();
+  try {
+    dietsApi.forEach((d) => {
+      Diet.findOrCreate({
+        where: {
+          name: d,
+        },
+      });
+    });
+  } catch (e) {
+    console.log(e);
+  }
+};
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+    dietLoader();
+    console.log("%s listening at 3001"); // eslint-disable-line no-console
   });
 });
