@@ -4,10 +4,10 @@ import SearchBar from "../SearchBar/SearchBar";
 import "./NavBar.css";
 
 export default function NavBar() {
+  const [currentPage, setCurrentPage] = useState(1);
   function returnToFirstPage() {
     setCurrentPage(1);
   }
-  const [currentPage, setCurrentPage] = useState(1);
   return (
     <ul className="ul">
       <li>
