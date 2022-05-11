@@ -19,7 +19,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const recipes = useSelector((state) => state.recipes);
   const diets = useSelector((state) => state.diets);
-  const [juan, setJuan] = useState(true);
+  const [cambio, setCambio] = useState(true);
   useEffect(() => {
     dispatch(getRecipes());
   }, [dispatch]);
@@ -44,12 +44,12 @@ export default function Home() {
 
   function handleOrderByName(e) {
     dispatch(orderByName(e.target.value));
-    juan ? setJuan(false) : setJuan(true);
+    cambio ? setCambio(false) : setCambio(true);
   }
 
   function handleOrderByScore(e) {
     dispatch(orderByScore(e.target.value));
-    juan ? setJuan(false) : setJuan(true);
+    cambio ? setCambio(false) : setCambio(true);
   }
 
   /*function returnToFirstPage() {

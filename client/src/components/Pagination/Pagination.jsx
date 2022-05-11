@@ -24,7 +24,7 @@ export default function Pagination({
                 style={
                   num === currentPage
                     ? {
-                        backgroundColor: "#fd684d",
+                        backgroundColor: "green",
                         color: "white",
                         border: "1px solid #777db8",
                       }
