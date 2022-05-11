@@ -20,7 +20,7 @@ const router = Router();
 router.get("/recipes", async (req, res, next) => {
   try {
     const { name } = req.query;
-    const everything = await model.allData(name);
+    const everything = await model.allData();
     const recipes = await model.infoByName(name);
     if (name) {
       let findDiet = await Diet.findOne({
