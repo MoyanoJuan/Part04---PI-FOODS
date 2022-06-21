@@ -21,9 +21,9 @@ export default function SearchBar({ returnToFirstPage }) {
   return (
     <div className="container">
       <input
-        className="input"
+        className="Input"
         type="text"
-        placeholder="Search by name or diet type:"
+        placeholder="Search by name or diet type"
         onChange={(e) => handleChange(e)}
       />
       <button

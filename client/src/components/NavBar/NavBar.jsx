@@ -16,9 +16,11 @@ export default function NavBar() {
         </Link>
       </li>
       <li>
-        <Link to="/create" className="ul-li">
-          Create your own recipe!
-        </Link>
+        <button className="ul-li-bu">
+          <Link to="/create" className="ul-li-deco">
+            Create your own recipe!
+          </Link>
+        </button>
       </li>
       <li>
         <SearchBar className="ul-input" returnToFirstPage={returnToFirstPage} />

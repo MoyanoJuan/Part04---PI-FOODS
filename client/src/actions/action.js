@@ -9,6 +9,7 @@ export const POST_RECIPE = "POST_RECIPE";
 export const ORDER_BY_SCORE = "ORDER_BY_SCORE";
 export const RECIPE_DETAIL = "RECIPE_DETAIL";
 export const RANDOM_RECIPE = "RANDOM_RECIPE";
+export const BEST_FIVE = "BEST_FIVE";
 
 export function getRecipes() {
   return async function (dispatch) {
@@ -41,6 +42,12 @@ export function orderByName(payload) {
 export function orderByScore(payload) {
   return {
     type: ORDER_BY_SCORE,
+    payload,
+  };
+}
+export function bestFive(payload) {
+  return {
+    type: BEST_FIVE,
     payload,
   };
 }

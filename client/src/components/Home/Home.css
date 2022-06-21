@@ -1,12 +1,5 @@
 .home-back {
-  background-image: linear-gradient(
-    to right top,
-    #ffcffb,
-    #ffb7cb,
-    #ffb874,
-    #e6d516,
-    #00ee4a
-  );
+  background-color: sandybrown;
   min-height: 100vh;
 }
 .allCards {
@@ -18,7 +11,7 @@
 .selectors {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -32,6 +25,12 @@
   margin: 10px;
   align-items: center;
 }
+
+.random-pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .random-button {
   background-color: inherit;
   color: black;
@@ -42,7 +41,7 @@
   margin: 0;
   position: relative;
   top: auto;
-  left: 800px;
+  /* left: 800px; */
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 20px;

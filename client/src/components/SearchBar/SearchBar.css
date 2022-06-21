@@ -5,8 +5,10 @@
 }
 .Input {
   font-size: large;
+  font-weight: bold;
   border-radius: 5px;
-  height: 100%;
+  height: 30px;
+  margin-top: 15px;
   width: 300px;
   border: 2px solid #fbfbfb;
   background-color: transparent;

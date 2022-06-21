@@ -8,6 +8,7 @@ import {
   RECIPE_DETAIL,
   POST_RECIPE,
   RANDOM_RECIPE,
+  BEST_FIVE,
 } from "../actions/action";
 
 const initialState = {
@@ -63,7 +64,7 @@ const rootReducer = function (state = initialState, action) {
       };
     case ORDER_BY_SCORE:
       const recipesByScore =
-        action.payload === "asc"
+        action.payload === "desc"
           ? state.recipes.sort((a, b) => {
               if (a.healthScore > b.healthScore) return 1;
               if (b.healthScore > a.healthScore) return -1;
@@ -97,6 +98,20 @@ const rootReducer = function (state = initialState, action) {
       return {
         ...state,
         random: action.payload,
+      };
+    case BEST_FIVE:
+      const recipesBest = function () {
+        if (action.payload === "best")
+          state.recipes.sort((a, b) => {
+            if (a.healthScore > b.healthScore) return 1;
+            if (b.healthScore > a.healthScore) return -1;
+            return 0;
+          });
+      };
+      const recipeBesties = recipesBest().slice(0, 5);
+      return {
+        ...state,
+        recipes: recipeBesties,
       };
     default:
       return state;

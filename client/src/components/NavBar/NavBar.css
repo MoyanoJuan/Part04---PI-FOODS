@@ -1,13 +1,10 @@
 .ul {
   margin: 0%;
-  padding: 20px;
   background-color: black;
   background-size: cover;
   color: white;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 .ul-li {
@@ -15,7 +12,7 @@
   display: flex;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 15px;
   text-decoration: none;
   font-size: 17px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -25,7 +22,37 @@
 .ul-li:hover {
   background-color: #ddd;
   background-repeat: repeat;
-  height: 100%;
+  width: auto;
+  color: black;
+}
+
+.ul-li-bu {
+  margin-left: 270px;
+  float: left;
+  display: flex;
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center;
+  border: 3px solid white;
+  margin-top: 13px;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+}
+.ul-li-bu:hover {
+  background-color: #ddd;
+  background-repeat: repeat;
+  width: auto;
+  color: black;
+}
+.ul-li-deco {
+  text-decoration: none;
+  color: white;
+}
+.ul-li-deco:hover {
+  background-color: #ddd;
+  background-repeat: repeat;
   width: auto;
   color: black;
 }

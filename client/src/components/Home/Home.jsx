@@ -122,7 +122,7 @@ export default function Home() {
             })}
         </div>
       </div>
-      <Link to={"/random"}>
+      <Link to={"/random"} className="random-pos">
         <button className="random-button">
           If you don't know what to eat:<br></br>Surprise Me!
         </button>
