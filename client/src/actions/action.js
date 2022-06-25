@@ -86,3 +86,10 @@ export function hola() {
     return dispatch({ type: RANDOM_RECIPE, payload: json.data });
   };
 }
+
+export function chau() {
+  return async function (dispatch) {
+    let json = await axios.get("http://localhost:3001/random");
+    return dispatch({ type: RANDOM_RECIPE, payload: json.data });
+  };
+}
